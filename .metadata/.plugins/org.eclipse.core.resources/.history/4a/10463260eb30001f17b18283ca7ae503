@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generate('http://metamodelo-entidad-relacion.ecore')]
+
+
+[template public generateElement(aColumn : Column)]
+[comment @main/]
+[file (aColumn.name, false, 'UTF-8')]
+
+[/file]
+[/template]

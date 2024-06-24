@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MetamodeloEntidadRelacion="http://metamodelo-entidad-relacion.ecore" xsi:schemaLocation="http://metamodelo-entidad-relacion.ecore ../../metamodelo_entidad_relacion/metamodelo/metamodelo_entidad_relacion.ecore">
+  <MetamodeloEntidadRelacion:Schema>
+    <table name="Usuario" pkey="/0/@table.0/@column.2">
+      <column name="email" type="String"/>
+      <column name="contrasena" type="String"/>
+      <column name="id" type="Integer"/>
+    </table>
+    <table name="DatosPersonales" pkey="/0/@table.1/@column.5">
+      <column name="nombres" type="String"/>
+      <column name="apellidos" type="String"/>
+      <column name="dni" type="String"/>
+      <column name="direccion" type="String"/>
+      <column name="telefono" type="String"/>
+      <column name="id" type="Integer"/>
+    </table>
+    <table name="HistorialClinico" pkey="/0/@table.2/@column.6">
+      <column name="fecha_cita" type="Date"/>
+      <column name="datos_generales_paciente" type="String"/>
+      <column name="datos_exploracion" type="String"/>
+      <column name="diagnostico" type="String"/>
+      <column name="pronostico" type="String"/>
+      <column name="tratamiento" type="String"/>
+      <column name="id" type="Integer"/>
+    </table>
+    <table name="AnalisisLaboratorio" pkey="/0/@table.3/@column.3">
+      <column name="sangre" type="String"/>
+      <column name="orina" type="String"/>
+      <column name="heces" type="String"/>
+      <column name="id" type="Integer"/>
+    </table>
+    <table name="Roles" pkey="/0/@table.4/@column.1">
+      <column name="name" type="String"/>
+      <column name="id" type="Integer"/>
+    </table>
+  </MetamodeloEntidadRelacion:Schema>
+  <MetamodeloEntidadRelacion:Schema>
+    <table name="Usuario">
+      <foreignkey refs="/0/@table.4" fkey="/0/@table.4/@column.1"/>
+    </table>
+    <table name="DatosPersonales">
+      <foreignkey refs="/0/@table.0" fkey="/0/@table.0/@column.2"/>
+    </table>
+    <table name="HistorialClinico">
+      <foreignkey refs="/0/@table.0" fkey="/0/@table.0/@column.2"/>
+    </table>
+    <table name="AnalisisLaboratorio">
+      <foreignkey refs="/0/@table.2" fkey="/0/@table.2/@column.6"/>
+    </table>
+    <table name="Roles"/>
+  </MetamodeloEntidadRelacion:Schema>
+</xmi:XMI>

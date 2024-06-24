@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uriMap:MappingContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uriMap="http:///www.eclipse.org/m2m/qvt/oml/MModelUriMap/1.0.0">
+  <mapping sourceURI="http://metamodelo-simplificado-uml.ecore" targetURI="platform:/resource/metamodelo_diagram_clase_uml/metamodelado/metamodelo_simplificado_diagrama_clase.ecore"/>
+  <mapping sourceURI="http://metamodelo-entidad-relacion.ecore" targetURI="platform:/resource/metamodelo_entidad_relacion/metamodelo/metamodelo_entidad_relacion.ecore"/>
+</uriMap:MappingContainer>

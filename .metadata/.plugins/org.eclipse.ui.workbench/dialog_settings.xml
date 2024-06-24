@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.acceleo.ide.ui.wizards.newproject.AcceleoNewProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.acceleo.ide.ui"/>
+			<item value="atlWizard"/>
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.m2m.qvt.oml.wizardCategory"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="427"/>
+			<item key="DIALOG_Y_ORIGIN" value="145"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="ImportExportAction">
+		<section name="ImportExportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="427"/>
+			<item key="DIALOG_Y_ORIGIN" value="114"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="550"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="77"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="762"/>
+		<item key="DIALOG_HEIGHT" value="639"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="PropertyDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="1062"/>
+		<item key="DIALOG_HEIGHT" value="833"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="149"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="836"/>
+		<item key="DIALOG_HEIGHT" value="810"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

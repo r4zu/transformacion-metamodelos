@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MetamodeloEntidadRelacion="http://metamodelo-entidad-relacion.ecore" xsi:schemaLocation="http://metamodelo-entidad-relacion.ecore ../../metamodelo_entidad_relacion/metamodelo/metamodelo_entidad_relacion.ecore">
+  <MetamodeloEntidadRelacion:Schema>
+    <table name="Usuario" pkey="/1/@column.2"/>
+    <table name="DatosPersonales" pkey="/2/@column.5"/>
+    <table name="HistorialClinico" pkey="/3/@column.6"/>
+    <table name="AnalisisLaboratorio" pkey="/4/@column.3"/>
+    <table name="Roles" pkey="/5/@column.1"/>
+  </MetamodeloEntidadRelacion:Schema>
+  <MetamodeloEntidadRelacion:Table name="Usuario" pkey="/1/@column.2">
+    <column name="email" type="String"/>
+    <column name="contrasena" type="String"/>
+    <column name="id" type="Integer"/>
+    <foreignkey refs="/0/@table.4" fkey="/5/@column.1"/>
+  </MetamodeloEntidadRelacion:Table>
+  <MetamodeloEntidadRelacion:Table name="DatosPersonales" pkey="/2/@column.5">
+    <column name="nombres" type="String"/>
+    <column name="apellidos" type="String"/>
+    <column name="dni" type="String"/>
+    <column name="direccion" type="String"/>
+    <column name="telefono" type="String"/>
+    <column name="id" type="Integer"/>
+    <foreignkey refs="/1" fkey="/1/@column.2"/>
+  </MetamodeloEntidadRelacion:Table>
+  <MetamodeloEntidadRelacion:Table name="HistorialClinico" pkey="/3/@column.6">
+    <column name="fecha_cita" type="Date"/>
+    <column name="datos_generales_paciente" type="String"/>
+    <column name="datos_exploracion" type="String"/>
+    <column name="diagnostico" type="String"/>
+    <column name="pronostico" type="String"/>
+    <column name="tratamiento" type="String"/>
+    <column name="id" type="Integer"/>
+    <foreignkey refs="/1" fkey="/1/@column.2"/>
+  </MetamodeloEntidadRelacion:Table>
+  <MetamodeloEntidadRelacion:Table name="AnalisisLaboratorio" pkey="/4/@column.3">
+    <column name="sangre" type="String"/>
+    <column name="orina" type="String"/>
+    <column name="heces" type="String"/>
+    <column name="id" type="Integer"/>
+    <foreignkey refs="/3" fkey="/3/@column.6"/>
+  </MetamodeloEntidadRelacion:Table>
+  <MetamodeloEntidadRelacion:Table name="Roles" pkey="/5/@column.1">
+    <column name="name" type="String"/>
+    <column name="id" type="Integer"/>
+  </MetamodeloEntidadRelacion:Table>
+</xmi:XMI>

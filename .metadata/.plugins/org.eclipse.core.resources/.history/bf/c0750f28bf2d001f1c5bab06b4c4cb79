@@ -1,0 +1,6 @@
+-- @path MM=/metamodelo_diagram_clase_uml/metamodelado/metamodelo_simplificado_diagrama_clase.ecore
+-- @path MM1=/metamodelo_entidad_relacion/metamodelo/metamodelo_entidad_relacion.ecore
+
+module transformacion;
+create OUT : MM1 from IN : MM;
+

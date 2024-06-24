@@ -1,0 +1,15 @@
+-- @path MM=/metamodelo_diagram_clase_uml/metamodelado/metamodelo_simplificado_diagrama_clase.ecore
+-- @path MM1=/metamodelo_entidad_relacion/metamodelo/metamodelo_entidad_relacion.ecore
+
+module transformacion;
+create OUT : MM1 from IN : MM;
+
+rule Package2Schema {
+	from
+		entrada : MM!Package
+	to
+		salida : MM1!Schema {
+			name <- entrada.name,
+			table <- entrada.Class
+		}
+}
